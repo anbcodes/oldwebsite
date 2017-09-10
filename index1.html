@@ -10,11 +10,7 @@ body{
 </head>
 <body>
   <h1>tell me who you are</h1>
-      <form>
-        <fieldset>
-          <legend>put your name in the box</legend>
-          <p>
-            <label>put you name here</label>
-            <input type = "text"
-                   id = "myText"
-                   value = "name here" />
+  <form name="input" action="handle_email.php" method="post">
+Email: <input type="text" name="email" />
+<input type="submit" value="Newsletter" />
+</form> 
