@@ -10,7 +10,13 @@ body{
 </head>
 <body>
   <h1>Tell me who you are</h1>
-  <form name="input" action="index1?" method="post">
-Name: <input type="text" name="name" />
-<input type="submit" value="submit" />
+  <form id="contact-form" action="script.php" method="post">
+    <input type="hidden" name="redirect" value="https://anbcodes.github.io/index1" />
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="" />
+        </li>
+
+    </ul>
 </form>
