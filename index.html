@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script language="javascript">
 <style>
 body{
   background: rgb(68, 227, 255);
@@ -11,9 +12,10 @@ body{
 <body>
   <h1>Tell me who you are</h1>
   <form action="https://anbcodes.github.io/index1" method="get">
-  <label for="GET-name">Name:</label>
-  <input id="GET-name" type="text" name="name">
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="name">
   <input type="submit" value="Save">
   <input type="hidden" value="https://anbcodes.github.io/index1">
 </form>
 </body>
+var name = document.getElementById('name').value;
