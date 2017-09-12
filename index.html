@@ -2,12 +2,7 @@
 <html>
 <head>
   <script><link rel="import" href="index1"></script>
-<script> function testJS() {
-    var b = document.getElementById('name').value,
-        url = 'http://anbcodes.github.io/index1?name=' + encodeURIComponent(b);
 
-    document.location.href = url;
-} </script>
 
 <style>
 body{
@@ -26,5 +21,7 @@ body{
 </form>
 <script type="text/javasript">
     var x = document.getElementsByName("name");
+    localStorage["key"] = x;
+  
   </script>
 </body>
