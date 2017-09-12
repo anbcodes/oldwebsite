@@ -2,7 +2,16 @@
 <html>
 <head>
   <script><link rel="import" href="https://anbcodes.github.io"> </script>
-<script src="/index.html"></script>
+<script> window.onload = function () {
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+    document.getElementById('here').innerHTML = data.name;
+} </script>
 
 <style>
 #minecraft{
